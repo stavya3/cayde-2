@@ -64,8 +64,8 @@ assign Inst_mem[32]  = 32'h35B99073;//CSRRN
 assign Inst_mem[33]  = 32'h53462073;//CSRRS
 assign Inst_mem[34]  = 32'h3F983073;//CSRRC
 assign Inst_mem[35]  = 32'h1F1D073;//CSRRW1
-assign Inst_mem[33]  = 32'hF556073;//CSRRS1
-assign Inst_mem[34]  = 32'hEB1E7073;//CSRRC1
+assign Inst_mem[36]  = 32'hF556073;//CSRRS1
+assign Inst_mem[37]  = 32'hEB1E7073;//CSRRC1
 
 
 
