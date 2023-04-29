@@ -1,0 +1,414 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sat Apr 29 11:34:52 2023
+# Process ID: 31040
+# Current directory: D:/PPT-20221222T162729Z-001/Ingine11_RISCV/Ingine11_RISCV.runs/synth_1
+# Command line: vivado.exe -log riscv.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source riscv.tcl
+# Log file: D:/PPT-20221222T162729Z-001/Ingine11_RISCV/Ingine11_RISCV.runs/synth_1/riscv.vds
+# Journal file: D:/PPT-20221222T162729Z-001/Ingine11_RISCV/Ingine11_RISCV.runs/synth_1\vivado.jou
+# Running On: Dinesh, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17083 MB
+#-----------------------------------------------------------
+source riscv.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/PPT-20221222T162729Z-001/Ingine11_RISCV/Ingine11_RISCV.srcs/utils_1/imports/synth_1/riscv.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/PPT-20221222T162729Z-001/Ingine11_RISCV/Ingine11_RISCV.srcs/utils_1/imports/synth_1/riscv.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top riscv -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19828
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 835.359 ; gain = 409.047
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'riscv' [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/RISC_V.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Controller' [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/Controller.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'Controller' (0#1) [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/Controller.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'ALUController' [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/ALUController.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALUController' (0#1) [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/ALUController.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Datapath' [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/Datapath.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'adder' [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/adder.sv:3]
+	Parameter WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/adder.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'adder_32' [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/adder_32.sv:3]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'adder_32' (0#1) [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/adder_32.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/mux2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (0#1) [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/mux2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'flopr' [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/flopr.sv:23]
+	Parameter WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr' (0#1) [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/flopr.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'IM' [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'IM' (0#1) [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'data_extract' [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/data_extract.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'data_extract' (0#1) [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/data_extract.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/mux2.sv:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (0#1) [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/mux2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'RegFile' [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/RegFile.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'RegFile' (0#1) [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/RegFile.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'imm_Gen' [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/imm_Gen.sv:23]
+WARNING: [Synth 8-151] case item 7'b0110111 is unreachable [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/imm_Gen.sv:31]
+INFO: [Synth 8-6155] done synthesizing module 'imm_Gen' (0#1) [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/imm_Gen.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/alu.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/alu.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'datamemory' [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/datamemory.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'datamemory' (0#1) [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/datamemory.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'Datapath' (0#1) [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/Datapath.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'riscv' (0#1) [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/RISC_V.sv:3]
+WARNING: [Synth 8-3848] Net Inst_mem[127] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[126] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[125] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[124] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[123] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[122] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[121] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[120] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[119] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[118] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[117] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[116] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[115] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[114] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[113] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[112] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[111] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[110] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[109] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[108] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[107] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[106] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[105] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[104] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[103] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[102] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[101] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[100] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[99] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[98] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[97] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[96] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[95] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[94] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[93] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[92] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[91] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[90] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[89] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[88] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[87] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[86] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[85] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[84] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[83] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[82] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[81] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[80] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[79] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[78] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[77] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[76] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[75] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[74] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[73] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[72] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[71] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[70] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[69] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[68] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[67] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[66] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[65] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[64] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[63] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[62] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[61] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[60] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[59] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[58] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[57] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[56] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[55] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[54] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[53] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[52] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[51] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[50] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[49] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[48] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[47] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[46] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[45] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[44] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[43] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[42] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[41] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[40] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[39] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[38] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[37] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[36] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[35] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[34] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[33] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-3848] Net Inst_mem[32] in module/entity IM does not have driver. [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv:13]
+WARNING: [Synth 8-87] always_comb on 'y_reg' did not result in combinational logic [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/data_extract.sv:39]
+WARNING: [Synth 8-87] always_comb on 'rd_reg' did not result in combinational logic [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/datamemory.sv:20]
+WARNING: [Synth 8-7129] Port inst[31] in module data_extract is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[30] in module data_extract is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[29] in module data_extract is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[28] in module data_extract is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[27] in module data_extract is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[26] in module data_extract is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[25] in module data_extract is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[24] in module data_extract is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[23] in module data_extract is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[22] in module data_extract is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[21] in module data_extract is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[20] in module data_extract is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[19] in module data_extract is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[18] in module data_extract is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[17] in module data_extract is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[16] in module data_extract is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[15] in module data_extract is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[11] in module data_extract is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[10] in module data_extract is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[9] in module data_extract is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[8] in module data_extract is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[7] in module data_extract is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ra[1] in module IM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ra[0] in module IM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AUIPC in module ALUController is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 931.277 ; gain = 504.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 931.277 ; gain = 504.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 931.277 ; gain = 504.965
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+WARNING: [Synth 8-327] inferring latch for variable 'y_reg' [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/data_extract.sv:39]
+WARNING: [Synth 8-327] inferring latch for variable 'rd_reg' [D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/datamemory.sv:20]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 931.277 ; gain = 504.965
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 32    
+	                9 Bit    Registers := 1     
++---Muxes : 
+	   5 Input   32 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 11    
+	   9 Input   32 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 2     
+	   5 Input    1 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 42    
+	   3 Input    1 Bit        Muxes := 2     
+	  12 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port ra[1] in module IM is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ra[0] in module IM is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1163.258 ; gain = 736.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+---------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives      | 
++------------+---------------------+-----------+----------------------+-----------------+
+|riscv       | dp/data_mem/mem_reg | Implied   | 512 x 32             | RAM256X1S x 64  | 
++------------+---------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 1163.258 ; gain = 736.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+---------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object          | Inference | Size (Depth x Width) | Primitives      | 
++------------+---------------------+-----------+----------------------+-----------------+
+|riscv       | dp/data_mem/mem_reg | Implied   | 512 x 32             | RAM256X1S x 64  | 
++------------+---------------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:45 . Memory (MB): peak = 1163.258 ; gain = 736.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1163.258 ; gain = 736.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1163.258 ; gain = 736.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1163.258 ; gain = 736.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1163.258 ; gain = 736.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1163.258 ; gain = 736.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1163.258 ; gain = 736.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     3|
+|2     |CARRY4    |    57|
+|3     |LUT1      |     6|
+|4     |LUT2      |   158|
+|5     |LUT3      |   140|
+|6     |LUT4      |   141|
+|7     |LUT5      |   349|
+|8     |LUT6      |   599|
+|9     |MUXF7     |    90|
+|10    |RAM256X1S |    64|
+|11    |FDCE      |     9|
+|12    |FDRE      |   384|
+|13    |LD        |    96|
+|14    |IBUF      |     2|
+|15    |OBUF      |    32|
++------+----------+------+
+
+Report Instance Areas: 
++------+------------------+---------------+------+
+|      |Instance          |Module         |Cells |
++------+------------------+---------------+------+
+|1     |top               |               |  2130|
+|2     |  dp              |Datapath       |  2093|
+|3     |    alu_module    |alu            |   107|
+|4     |    data_mem      |datamemory     |    97|
+|5     |    instr_mem     |IM             |    28|
+|6     |    load_data_ex  |data_extract   |    37|
+|7     |    pcadd2        |adder_32       |     9|
+|8     |    pcreg         |flopr          |  1207|
+|9     |    rf            |RegFile        |   576|
+|10    |    store_data_ex |data_extract_0 |    32|
++------+------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1163.258 ; gain = 736.945
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 129 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1163.258 ; gain = 736.945
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1163.258 ; gain = 736.945
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1175.117 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 307 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 32 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1237.863 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 160 instances were transformed.
+  LD => LDCE: 64 instances
+  LD => LDCE (inverted pins: G): 32 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 64 instances
+
+Synth Design complete, checksum: 661ae055
+INFO: [Common 17-83] Releasing license: Synthesis
+47 Infos, 129 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1237.863 ; gain = 818.270
+INFO: [Common 17-1381] The checkpoint 'D:/PPT-20221222T162729Z-001/Ingine11_RISCV/Ingine11_RISCV.runs/synth_1/riscv.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file riscv_utilization_synth.rpt -pb riscv_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 29 11:35:51 2023...

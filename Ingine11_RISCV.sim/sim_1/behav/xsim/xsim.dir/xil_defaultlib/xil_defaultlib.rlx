@@ -1,0 +1,20 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+D:/PPT-20221222T162729Z-001/Ingine11_RISCV/Ingine11_RISCV.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,uvm,,,,,,
+D:/PPT-20221222T162729Z-001/Ingine11_RISCV/Ingine11_RISCV.srcs/sim_1/new/riscv_tb.sv,1682749011,systemVerilog,,,,riscv_tb,,uvm,,,,,,
+D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/ALUController.sv,1555993695,systemVerilog,,D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/Controller.sv,,ALUController,,uvm,,,,,,
+D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/Controller.sv,1682725296,systemVerilog,,D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/Datapath.sv,,Controller,,uvm,,,,,,
+D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/Datapath.sv,1682748283,systemVerilog,,D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/RISC_V.sv,,Datapath,,uvm,,,,,,
+D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/RISC_V.sv,1555993695,systemVerilog,,D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/RegFile.sv,,riscv,,uvm,,,,,,
+D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/RegFile.sv,1555993695,systemVerilog,,D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/adder.sv,,RegFile,,uvm,,,,,,
+D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/adder.sv,1555993695,systemVerilog,,D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/adder_32.sv,,adder,,uvm,,,,,,
+D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/adder_32.sv,1555993695,systemVerilog,,D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/alu.sv,,adder_32,,uvm,,,,,,
+D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/alu.sv,1555993695,systemVerilog,,D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/data_extract.sv,,alu,,uvm,,,,,,
+D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/data_extract.sv,1555993695,systemVerilog,,D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/datamemory.sv,,data_extract,,uvm,,,,,,
+D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/datamemory.sv,1555993695,systemVerilog,,D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/flopr.sv,,datamemory,,uvm,,,,,,
+D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/flopr.sv,1555993695,systemVerilog,,D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/imm_Gen.sv,,flopr,,uvm,,,,,,
+D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/imm_Gen.sv,1555993695,systemVerilog,,D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv,,imm_Gen,,uvm,,,,,,
+D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv,1682749427,systemVerilog,,D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/mux2.sv,,IM,,uvm,,,,,,
+D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/mux2.sv,1555993695,systemVerilog,,D:/PPT-20221222T162729Z-001/Ingine11_RISCV/Ingine11_RISCV.srcs/sim_1/new/riscv_tb.sv,,mux2,,uvm,,,,,,

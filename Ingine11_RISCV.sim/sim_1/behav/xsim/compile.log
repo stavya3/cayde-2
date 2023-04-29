@@ -1,0 +1,30 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/ALUController.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUController
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/Controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/Datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/RISC_V.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/RegFile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/adder_32.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/data_extract.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_extract
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/datamemory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datamemory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/flopr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/imm_Gen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imm_Gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/mux2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/PPT-20221222T162729Z-001/Ingine11_RISCV/Ingine11_RISCV.srcs/sim_1/new/riscv_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_tb

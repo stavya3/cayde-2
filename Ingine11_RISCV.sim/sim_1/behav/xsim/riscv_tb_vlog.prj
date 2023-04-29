@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../../Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/ALUController.sv" \
+"../../../../../../Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/Controller.sv" \
+"../../../../../../Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/Datapath.sv" \
+"../../../../../../Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/RISC_V.sv" \
+"../../../../../../Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/RegFile.sv" \
+"../../../../../../Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/adder.sv" \
+"../../../../../../Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/adder_32.sv" \
+"../../../../../../Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/alu.sv" \
+"../../../../../../Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/data_extract.sv" \
+"../../../../../../Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/datamemory.sv" \
+"../../../../../../Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/flopr.sv" \
+"../../../../../../Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/imm_Gen.sv" \
+"../../../../../../Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/instructionmemory.sv" \
+"../../../../../../Single-Cycle-Processor-master/Single-Cycle-Processor-master/design/mux2.sv" \
+"../../../../Ingine11_RISCV.srcs/sim_1/new/riscv_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
